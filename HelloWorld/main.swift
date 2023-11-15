@@ -9,6 +9,7 @@
 /* Testing comments*/
 
 import Foundation
+import Cocoa
 
 var age = 21
 var name = "Birdman"
@@ -155,6 +156,74 @@ for  _ in 0..<4 {
     print("Keep Going!")
 }
 
+//trying another for loop
+let cars = ["Porsche", "BMW", "Toyota"]
+for singleCar in cars {
+    print("\(singleCar) is a beautiful car.")
+}
+
+//while condition is met, and practicing continues and breaks
+
+var count = 0
+while (count < 6) {
+    
+    if(count == 4){
+        count += 1
+        continue
+    }else{
+        print ("This is a while loop: \(count)")
+        count += 1
+        
+    }
+    
+}
+
+//break practice
+
+var count2 = 0
+while (count2 < 6){
+    
+    if(count2 == 4){
+        count2 += 1
+        break
+    }else{
+        print("This is the count: \(count2)")
+        count2 += 1
+    }
+}
+
+//work on array syntax
+
+var dinosaurs = [String]()
+
+dinosaurs.append("T-Rex")
+dinosaurs.append("Triceratops")
+dinosaurs.append("Velociraptor")
+
+print("First dinosaur in the array is: \(dinosaurs[0])")
+
+print("Third dinosaur in the array is: \(dinosaurs[2])")
+
+//iterate over each item in the array
+
+for item in dinosaurs{
+    print("The dinosaur name is: \(item)")
+}
+
+//When a programmer wants the index and value, enumerate it
+//found out the syntax is different than listed in the tutuorial same as println
+
+for(index, value) in dinosaurs.enumerated(){
+    print("Item \(index + 1): \(value)")
+}
+
+var chessPieces = [String]()
+
+//Is the array empty
+print("The array is empty: \(chessPieces.isEmpty)")
+
+
+
 print("Let\'s print a range which is a unique operator for swift")
 print(names[x])
 
@@ -166,9 +235,6 @@ print("The bank name is: " + bankName + " and the bank number is: \(bankNumber)"
 print("Hello, World! \nTesting the new line character here")
 
 print("My name is: " + name + "  and my age is: \(age)")
-
-
-
 
 print("The amount of money I have as a programmer in my bank account currently: \(money)")
 
